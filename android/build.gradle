@@ -69,6 +69,6 @@ android {
 
 dependencies {
     // Zporter fork of HaishinKit.kt: adds Camera2 setZoom for Android live-stream
-    // zoom. Built by JitPack from nayem-zporter/HaishinKit.kt tag 0.14.2-zporter.1.
-    implementation('com.github.nayem-zporter.HaishinKit~kt:haishinkit:0.14.2-zporter.1')
+    // zoom. Built by JitPack from nayem-zporter/HaishinKit.kt tag 0.14.2-zporter.2.
+    implementation('com.github.nayem-zporter.HaishinKit~kt:haishinkit:0.14.2-zporter.2')
 }
