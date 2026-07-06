@@ -128,6 +128,14 @@ class RtmpStream extends Stream {
         .attachVideo({"memory": _memory, "source": video?.toMap()});
   }
 
+  /// Sets the camera digital zoom ratio (1.0 = no zoom). Android only; on iOS
+  /// zoom is driven natively via AVCaptureDevice by the host app.
+  Future<void> setZoom(double factor) async {
+    assert(_memory != null);
+    await RtmpStreamPlatform.instance
+        .setZoom({"memory": _memory, "value": factor});
+  }
+
   /// Sends streaming audio, video and data message from client.
   Future<void> publish(String name) async {
     assert(_memory != null);

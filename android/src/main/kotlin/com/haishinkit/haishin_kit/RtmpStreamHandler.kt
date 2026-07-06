@@ -87,6 +87,14 @@ class RtmpStreamHandler(
                 result.success(null)
             }
 
+            "$TAG#setZoom" -> {
+                val value = call.argument<Double?>("value")
+                value?.let {
+                    camera?.setZoom(it.toFloat())
+                }
+                result.success(null)
+            }
+
             "$TAG#setSessionPreset" -> {
                 // for iOS
                 result.success(null)

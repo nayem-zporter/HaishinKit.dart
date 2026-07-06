@@ -42,6 +42,11 @@ abstract class RtmpStreamPlatform extends PlatformInterface {
     throw UnimplementedError('setFrameRate() has not been implemented.');
   }
 
+  /// Sets the camera digital zoom ratio (Android).
+  Future<void> setZoom(Map<String, dynamic> params) {
+    throw UnimplementedError('setZoom() has not been implemented.');
+  }
+
   /// Sets the sessionPreset property.
   Future<void> setSessionPreset(Map<String, dynamic> params) {
     throw UnimplementedError('setSessionPreset has not been implemented.');
